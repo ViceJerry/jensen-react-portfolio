@@ -9,17 +9,24 @@ export default class PortfolioContainer extends Component {
     this.state = {
       pageTitle: "Wellcome to my portfolio",
       data: [
-        { title: "Quip" },
-        { title: "Eventbrite" },
-        { title: "Ministry Safe" },
-        { title: "SwingAway" }
+        { title: "Quip", category: "eCommerce" },
+        { title: "Eventbrite", category: "Scheduling" },
+        { title: "Ministry Safe", category: "Enterprise" },
+        { title: "SwingAway", category: "eCommerce" }
       ]
     };
+    this.handleFilter = this.handleFilter.bind(this);
+  }
+
+  handleFilter(filter) {
+    this.setState({
+      data: this.state.data.filter
+    });
   }
 
   portfolioItems() {
     return this.state.data.map(item => {
-      return <PortfolioItem title={item} url={"google.com"} />;
+      return <PortfolioItem title={item.title} url={"google.com"} />;
     });
   }
 
