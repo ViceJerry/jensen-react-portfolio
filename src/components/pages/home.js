@@ -6,6 +6,7 @@ export default function() {
   return (
     <div>
       <h1>Homepage</h1>
+      <PortfolioContainer />
     </div>
   );
 }
