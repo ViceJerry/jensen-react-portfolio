@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Login from "../auth/login";
-import LoginImg from "../../../static/assets/images/auth/login.jpg";
+import loginImg from "../../../static/assets/images/auth/login.jpg";
 
 export default class Auth extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ export default class Auth extends Component {
         <div
           className="left-column"
           style={{
-            backgroundImage: `url(${LoginImg})`
+            backgroundImage: `url(${loginImg})`
           }}
         />
 
